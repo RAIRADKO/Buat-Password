@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikin Password</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="image-container">
+            <img src="meme-kominfo.jpg" alt="Meme Kominfo">
+        </div>
+        <div class="content-container">
+            <div class="content">
+                <h1>🔒 Bikin Password</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th> 
+                            <th>Kriteria</th>
+                            <th>Cek</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td class="criteria-description" id="jml">Jumlah 8-20 karakter</td>
+                            <td id="length" class="error"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td class="criteria-description" id="kecil">Ada huruf kecil</td>
+                            <td id="lowercase" class="error"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td class="criteria-description" id="besar">Ada huruf besar</td>
+                            <td id="uppercase" class="error"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td class="criteria-description" id="angka">Minimal 2 angka</td>
+                            <td id="numbers" class="error"></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td class="criteria-description" id="simbol">Ada simbol (!@#$%^&*)</td>
+                            <td id="symbols" class="error"></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td class="criteria-description" id="spasi">Tidak boleh ada spasi</td>
+                            <td id="spaces" class="error"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="input-group">
+                    <input type="password" id="password-input" placeholder="Masukkan password" class="invalid">
+                    <button id="show-password" type="button">🫣</button>
+                </div>
+                <p>atau</p>
+                <button id="generate-password" type="button">🎲 Generate Password</button>
+
+                <p id="message">✅Semua kriteria terpenuhi!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
